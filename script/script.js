@@ -37,9 +37,6 @@ add.addEventListener('click',()=>{
     if(arr!=null && !arr.includes(task)){
         new_tasks_object.push(task);
     }
-    else if(parr.value.length != 0 && arr.includes(task)){
-        alert("Task Already Exists!");
-    }
     localStorage.setItem("todo",JSON.stringify(new_tasks_object));
     parr.value="";
     mHTML="";
