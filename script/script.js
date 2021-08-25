@@ -25,7 +25,7 @@ var arr=localStorage.getItem("todo");
 add.addEventListener('click',()=>{
     var task=parr.value;
     if (parr.value.length === 0){
-        alert("Enter A Task First!")
+        alert("Enter A Task First!");
     }
     var arr=localStorage.getItem("todo");
     var new_tasks_object;
@@ -34,8 +34,8 @@ add.addEventListener('click',()=>{
     }else{
         new_tasks_object=JSON.parse(arr);
     }
-    if (arr.includes(task)){
-        alert("Task Already Exists!")
+    if (parr.value.length != 0 && arr.includes(task)){
+        alert("Task Already Exists!");
     }
     if(arr!=null && !arr.includes(task)){
         new_tasks_object.push(task);
