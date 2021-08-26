@@ -34,7 +34,7 @@ add.addEventListener('click',()=>{
     }else{
         new_tasks_object=JSON.parse(arr);
     }
-    if(arr!=null && !arr.includes(task)){
+    if(!arr.includes(task)){
         new_tasks_object.push(task);
     }
     localStorage.setItem("todo",JSON.stringify(new_tasks_object));
