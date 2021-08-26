@@ -31,6 +31,7 @@ add.addEventListener('click',()=>{
     var new_tasks_object;
     if(arr==null){
         new_tasks_object=[];
+        new_tasks_object=JSON.parse(arr);
     }else{
         new_tasks_object=JSON.parse(arr);
     }
